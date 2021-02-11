@@ -1,0 +1,5 @@
+pre-order traversal: a,b,d,c,e,f
+
+in-order traversal:b,d,a,e,c,f
+
+post-order traversal: d,b,e,f,c,a

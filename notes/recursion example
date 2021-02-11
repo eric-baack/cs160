@@ -1,0 +1,11 @@
+# recursion example from class on March 20, 2019
+# Hadiqa Afzal
+# goal:  obtain sum by shrinking problem
+
+def listsum(num_list):
+    if len(numList == 1):
+        return numList[0]
+    else:
+        return numList[0] + listsum(numList[1:])
+
+print(listsum([1,4,5,7,8,9]))

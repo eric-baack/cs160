@@ -1,0 +1,139 @@
+"""Morse code encoding and decoding"""
+#!/usr/bin/env python3
+# encoding: UTF-8
+
+from src.notes.trees.BinaryTree import BinaryTree
+#from pythonds3.trees import BinaryTree   # works
+
+class Coder:
+    """Morse Code Encoder/Decoder"""
+
+    def __init__(self, file_in: str):
+        self.tree = BinaryTree("*")
+        file_read = open(file_in, "r")
+        for line in file_read:
+            cstr = line.split()
+            letter = cstr[0]
+            code = cstr[1]
+            self.follow_and_insert(code, letter)  
+
+    def follow_and_insert(self, code_str: str, letter: str):
+        """Follow the tree and insert a letter"""
+        print(f"{self.tree.preorder()}")
+        for dctr in range(len(code_str)):
+            if code_str[dctr] == ".":
+                if self.tree.get_child_left() == None:
+                    self.tree.insert_left("Q")
+                if dctr == len(code_str) - 1:
+                    self.tree.get_child_left().set_root_val(letter)
+                else:
+                    self.tree = self.tree.get_child_left()  # suspect problem here
+            if code_str[dctr] == "-":
+                if self.tree.get_child_right() == None:
+                    self.tree.insert_right("Q")
+                if dctr == len(code_str) - 1:
+                    self.tree.get_child_right().set_root_val(letter)
+                else:
+                    self.tree = self.tree.get_child_right()  # and here.  Not moving down tree.
+
+
+    def follow_and_retrieve(self, code_str: str):
+        """Follow the tree and retrieve a letter"""
+        if code_str[0] == ".":
+            if len(code_str) == 1:
+                cletter = self.tree.get_child_left().get_root_val(letter)
+            else:
+                self.tree = self.get_child_left()
+                self.follow_and_retrieve(code_str[1:])
+        if code_str[0] == "-":
+            if len(code_str) == 1:
+                cletter = self.tree.get_child_right().get_root_val(letter)
+            else:
+                self.tree = self.tree.get_child_right()
+                self.follow_and_retrieve(code_str[1:])
+        return cletter  
+
+    def find_path(self, tree: object, letter: str, path: str): 
+        """Find a key"""
+        lfound = False
+        self.tree = tree
+        if len(path) < 7 and not lfound:
+            print(f"path {path}")
+            if path[len(path)-1] == ".":   ## Crashing here - no branch on tree
+                if self.tree.get_child_left != None:
+                    print(f"letter {self.tree.get_child_left().get_root_val()}")
+                    if letter == self.tree.get_child_left().get_root_val():
+                        lfound = True
+                    else:
+                        pathl = path + "."
+                        self.tree = self.tree.get_child_left()
+                        self.find_path(self.tree, letter, pathl)
+                        pathr = path + "-"
+                        self.tree = self.tree.get_child_left()
+                        self.find_path(self.tree, letter, pathr)
+            if path[len(path)-1] == "-":
+                if self.tree.get_child_right != None:
+                    print(f"letter {self.tree.get_child_right.get_root_val()}")
+                    if letter == self.tree.get_child_right().get_root_val():
+                        lfound = True
+                    else:
+                        pathl = path + "."
+                        self.tree = self.get_child_right()
+                        self.find_path(self.tree, letter, pathl)
+                        pathr = path + "-"
+                        self.tree  = self.tree.get_child_right()
+                        self.find_path(self.tree, letter, pathr)
+            if len(path) == 7:
+                return "X"
+        else:
+            return path
+
+
+    def encode(self, msg: str):
+        """Encode a message"""
+        code_str = ""
+        for lctr in range(len(msg)):
+            cletter = msg[lctr]
+            path = "."
+            lcode = self.find_path(self.tree, cletter, path)
+            if lcode == "X":
+                path = "-"
+                lcode = self.find_path(self.tree, cletter, path)
+            code_str = code_str + " " + lcode
+        return code_str
+
+    def decode(self, code: str):
+        """Decode a message"""
+        clist = code.split()
+        lcode = ""
+        for mctr in range(len(clist)):
+            lcode = lcode + self.follow_and_retrieve(clist[mctr])
+        return lcode
+
+def main():
+    morse_coder = Coder("data/projects/morse/morse.txt")
+    print(f"Tree {morse_coder.tree.preorder()}")
+    print("Encoding 'sos'")
+    print("Expected: ... --- ...")
+    print("Encoded : {}".format(morse_coder.encode("sos")))
+    print("---")
+    print("Encoding 'data structures'")
+    print("Expected: -.. .- - .- ... - .-. ..- -.-. - ..- .-. . ... ")
+    print("Encoded : {}".format(morse_coder.encode("data structures")))
+    print("---")
+    print("Encoding '$$'")
+    print("Expected: Error message")
+    try:
+        print("Encoded : {}".format(morse_coder.encode("$$")))
+    except ValueError as ve:
+        print("ERROR: {}".format(ve))
+    print("---")
+    print("Decoding '.... . .-.. .-.. --- --..-- -.-. ... .---- -.... -----'")
+    print("Expected: hello,cs160")
+    test_str = ".... . .-.. .-.. --- --..-- -.-. ... .---- -.... -----"
+    print("Decoded : {}".format(morse_coder.decode(test_str)))
+
+
+if __name__ == "__main__":
+    main()
+    
