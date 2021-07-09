@@ -17,7 +17,6 @@ def readnames(namefile):
         name = l3[0]
         seats = l3[1]
         teammates = l3[2]
-        print("name, seats, teammates", name, seats, teammates)
         tdict[name] = [teammates]
         sdict[name] = [seats]
     namefile.close()
@@ -42,9 +41,9 @@ def readseats(seatfile, student_ct):
         day = l3[2]
         priority = int(l3[3])
         if priority <= student_ct:
-            ndict[seat] = [group, day]
+            ndict[seat] = group
             if group_adjust and priority == (student_ct - 1):
-                ndict[seat] = [group + 1, day]
+                ndict[seat] = group + 1
     seatfile.close()
     return ndict
 
@@ -61,7 +60,7 @@ def randseats(nseatsdict, teamdict):
             m = 0
         nseat = seatlist.pop(m)
         seatdict[s] = nseat
-        group = nseatsdict[nseat][0]
+        group = nseatsdict[nseat]
         if group not in gdict:
             gdict[group] = [s]
         else:
@@ -73,12 +72,17 @@ def checkseats(new_seats, new_groups, nseatsdict, teamdict, seatsdict):
     for s in new_seats:
         # check for same seat previously
         nseat = new_seats[s]
-        print("s, nseat: ", s, new_seats[s])
-        print("s, sds: ", s, seatsdict[s])
-        if nseat in seatsdict[s]:
-            pseats[s] = new_seats[s]
+        nrow = nseat[0]
+        #print("sl: ", seatsdict[s])
+        if len(seatsdict[s])> 0:
+            sl = len(seatsdict[s])
+            lseat = seatsdict[s]
+            lrow = lseat[0]
+            #print("n, l: ", nrow, lrow)
+            if nrow == lrow:
+                pseats[s] = new_seats[s]
         # check for same teammates previously
-        ngroup = nseatsdict[nseat][0]
+        ngroup = nseatsdict[nseat]
         for t in new_groups[ngroup]:
             if t != s:
                 if t in teamdict[s]:
@@ -88,7 +92,7 @@ def checkseats(new_seats, new_groups, nseatsdict, teamdict, seatsdict):
 def save_seats(teamdict, seatsdict, nseatsdict, new_seats, new_groups):
     for s in new_seats:
         nseat = new_seats[s]
-        ngroup = nseatsdict[nseat][0]
+        ngroup = nseatsdict[nseat]
         seatsdict[s].append(nseat)
         for t in new_groups[ngroup]:
             if t != s:
@@ -132,6 +136,28 @@ def save_seats(teamdict, seatsdict, nseatsdict, new_seats, new_groups):
     return
 
         
+def changeseats(prob_seats, new_seats, nseatsdict):
+    mseats = list(prob_seats.values())
+    for s in prob_seats:
+        if len(mseats) > 1:
+            m = random.randrange(0,len(mseats))
+        else:
+            m = 0
+        nseat = mseats.pop(m)
+        new_seats[s] = nseat
+    gdict = {}
+    for s in new_seats:
+        nseat = new_seats[s]
+        group = nseatsdict[nseat]
+        if group not in gdict:
+            gdict[group] = [s]
+        else:
+            gdict[group].append(s)
+    return new_seats, gdict
+
+
+    
+
 
 
 
@@ -155,10 +181,20 @@ def main():
     
     first = True
     while len(prob_seats) > 0:
-        print("oh boy")
+        print("oh boy, # problems: ", len(prob_seats))
+        first = True
         # first attempt - try again if conflicts
-        new_seats, new_groups = randseats(nseatsdict, teamdict)
-        prob_seats = checkseats(new_seats, new_groups, nseatsdict, teamdict, seatsdict)
+        # this doesn't work if testing for row flips - need better
+        if len(prob_seats) > 3:
+            if first == True:
+                ctr = 0
+                first = False
+            while ctr < 5:
+                new_seats, new_groups = changeseats(prob_seats, new_seats, nseatsdict)
+                ctr += 1
+        else:
+            new_seats, new_groups = randseats(nseatsdict, teamdict)
+        prob_seats = checkseats(new_seats, new_groups, nseatsdict,teamdict, seatsdict)
     save_seats(teamdict, seatsdict, nseatsdict, new_seats, new_groups)
     print("New seats and groups assigned")
 
