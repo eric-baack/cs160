@@ -1,0 +1,50 @@
+Getruda Amos;E14;Ana Garcia, Cole Pollock
+Anna Beaverson;D11;Mathea Diedrich, Eric Shaffer
+Kaitlyn Bebensee;A10;Margaret Sessions, Tucker Young
+Casey Berg;A14;Logan Fritz, Margaret Petellin
+Shayla Betts;E10;Maxwell Chin, Noel Rosales
+Sara Borchard;D2;Jessica Droessler, Trenton Murray
+Kelsey Bratland;B10;David Burgad, Gabriella Schei
+David Burgad;B12;Kelsey Bratland, Gabriella Schei
+Maxwell Chin;E11;Shayla Betts, Noel Rosales
+Bjorn Christ;B6;Rachel Lummis, Mackenzie Milder
+Victoria Davis;A3;Hannah Hoffmann, Elijah Mitchell
+Jocelyn Demiglio;A8;Allegra Garcia, Ashley Schwichtenberg
+Mathea Diedrich;D12;Anna Beaverson, Eric Shaffer
+Nicholas Drilling;B4;Penelope Onsrud, Julia Veit
+Jessica Droessler;D4;Sara Borchard, Trenton Murray
+Nour El Kassem;D18;Makaela Rasmussen, Chloe Rozga
+Abigail Falconer;D14;Gabrielle Gardner, Deepa Gayadin
+Logan Fritz;A15;Casey Berg, Margaret Petellin
+Britt Fulton;B14;Nora Nyi Myint, Angelina Zimmerman
+Allegra Garcia;A7;Jocelyn Demiglio, Ashley Schwichtenberg
+Ana Garcia;E15;Getruda Amos, Cole Pollock
+Gabrielle Gardner;D16;Abigail Falconer, Deepa Gayadin
+Deepa Gayadin;D15;Abigail Falconer, Gabrielle Gardner
+Oskar Grothe;E18;Ellanor Marti
+Hannah Hoffmann;A4;Victoria Davis, Elijah Mitchell
+Olukayode Kuti;E6;Daniel Pfeffer-Kleemann, Harrison Prentice
+Rachel Lummis;B7;Bjorn Christ, Mackenzie Milder
+Ellanor Marti;E19;Oskar Grothe
+Layken McGuire;D8;Braydon Saltou, Blake Skramstad
+Mackenzie Milder;B8;Bjorn Christ, Rachel Lummis
+Elijah Mitchell;A2;Victoria Davis, Hannah Hoffmann
+Trenton Murray;D3;Sara Borchard, Jessica Droessler
+Nora Nyi Myint;B16;Britt Fulton, Angelina Zimmerman
+Penelope Onsrud;B3;Nicholas Drilling, Julia Veit
+Margaret Petellin;A16;Casey Berg, Logan Fritz
+Daniel Pfeffer-Kleemann;E8;Olukayode Kuti, Harrison Prentice
+Cole Pollock;E16;Getruda Amos, Ana Garcia
+Harrison Prentice;E7;Olukayode Kuti, Daniel Pfeffer-Kleemann
+Makaela Rasmussen;D19;Nour El Kassem, Chloe Rozga
+Noel Rosales;E12;Shayla Betts, Maxwell Chin
+Chloe Rozga;D20;Nour El Kassem, Makaela Rasmussen
+Braydon Saltou;D7;Layken McGuire, Blake Skramstad
+Gabriella Schei;B11;Kelsey Bratland, David Burgad
+Ashley Schwichtenberg;A6;Jocelyn Demiglio, Allegra Garcia
+Margaret Sessions;A11;Kaitlyn Bebensee, Tucker Young
+Eric Shaffer;D10;Anna Beaverson, Mathea Diedrich
+Blake Skramstad;D6;Layken McGuire, Braydon Saltou
+Julia Veit;B2;Nicholas Drilling, Penelope Onsrud
+Tucker Young;A12;Kaitlyn Bebensee, Margaret Sessions
+Angelina Zimmerman;B15;Britt Fulton, Nora Nyi Myint
