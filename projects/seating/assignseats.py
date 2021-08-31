@@ -169,7 +169,7 @@ def changeseats(prob_seats, new_seats, nseatsdict):
 
 def main():
     namefile = open("names2.txt", "r")
-    seatfile= open("v206seats.csv", "r")
+    seatfile= open("olin102seats.csv", "r")
 
     teamdict, seatsdict = readnames(namefile)
     
