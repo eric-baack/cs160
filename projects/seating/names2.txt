@@ -1,50 +1,51 @@
-Getruda Amos;E14;Ana Garcia, Cole Pollock
-Anna Beaverson;D11;Mathea Diedrich, Eric Shaffer
-Kaitlyn Bebensee;A10;Margaret Sessions, Tucker Young
-Casey Berg;A14;Logan Fritz, Margaret Petellin
-Shayla Betts;E10;Maxwell Chin, Noel Rosales
-Sara Borchard;D2;Jessica Droessler, Trenton Murray
-Kelsey Bratland;B10;David Burgad, Gabriella Schei
-David Burgad;B12;Kelsey Bratland, Gabriella Schei
-Maxwell Chin;E11;Shayla Betts, Noel Rosales
-Bjorn Christ;B6;Rachel Lummis, Mackenzie Milder
-Victoria Davis;A3;Hannah Hoffmann, Elijah Mitchell
-Jocelyn Demiglio;A8;Allegra Garcia, Ashley Schwichtenberg
-Mathea Diedrich;D12;Anna Beaverson, Eric Shaffer
-Nicholas Drilling;B4;Penelope Onsrud, Julia Veit
-Jessica Droessler;D4;Sara Borchard, Trenton Murray
-Nour El Kassem;D18;Makaela Rasmussen, Chloe Rozga
-Abigail Falconer;D14;Gabrielle Gardner, Deepa Gayadin
-Logan Fritz;A15;Casey Berg, Margaret Petellin
-Britt Fulton;B14;Nora Nyi Myint, Angelina Zimmerman
-Allegra Garcia;A7;Jocelyn Demiglio, Ashley Schwichtenberg
-Ana Garcia;E15;Getruda Amos, Cole Pollock
-Gabrielle Gardner;D16;Abigail Falconer, Deepa Gayadin
-Deepa Gayadin;D15;Abigail Falconer, Gabrielle Gardner
-Oskar Grothe;E18;Ellanor Marti
-Hannah Hoffmann;A4;Victoria Davis, Elijah Mitchell
-Olukayode Kuti;E6;Daniel Pfeffer-Kleemann, Harrison Prentice
-Rachel Lummis;B7;Bjorn Christ, Mackenzie Milder
-Ellanor Marti;E19;Oskar Grothe
-Layken McGuire;D8;Braydon Saltou, Blake Skramstad
-Mackenzie Milder;B8;Bjorn Christ, Rachel Lummis
-Elijah Mitchell;A2;Victoria Davis, Hannah Hoffmann
-Trenton Murray;D3;Sara Borchard, Jessica Droessler
-Nora Nyi Myint;B16;Britt Fulton, Angelina Zimmerman
-Penelope Onsrud;B3;Nicholas Drilling, Julia Veit
-Margaret Petellin;A16;Casey Berg, Logan Fritz
-Daniel Pfeffer-Kleemann;E8;Olukayode Kuti, Harrison Prentice
-Cole Pollock;E16;Getruda Amos, Ana Garcia
-Harrison Prentice;E7;Olukayode Kuti, Daniel Pfeffer-Kleemann
-Makaela Rasmussen;D19;Nour El Kassem, Chloe Rozga
-Noel Rosales;E12;Shayla Betts, Maxwell Chin
-Chloe Rozga;D20;Nour El Kassem, Makaela Rasmussen
-Braydon Saltou;D7;Layken McGuire, Blake Skramstad
-Gabriella Schei;B11;Kelsey Bratland, David Burgad
-Ashley Schwichtenberg;A6;Jocelyn Demiglio, Allegra Garcia
-Margaret Sessions;A11;Kaitlyn Bebensee, Tucker Young
-Eric Shaffer;D10;Anna Beaverson, Mathea Diedrich
-Blake Skramstad;D6;Layken McGuire, Braydon Saltou
-Julia Veit;B2;Nicholas Drilling, Penelope Onsrud
-Tucker Young;A12;Kaitlyn Bebensee, Margaret Sessions
-Angelina Zimmerman;B15;Britt Fulton, Nora Nyi Myint
+Getruda Amos;H2, G3;Kaitlyn Bebensee, Ben Jahnke, Kaitlyn Bebensee, Mathea Diedrich
+Anna Beaverson;F6, D2;Hannah Hoffmann, Kayode Kuti, Alyssa Blankenship, Trenton Murray
+Kaitlyn Bebensee;J3, G1;Getruda Amos, Ben Jahnke, Getruda Amos, Mathea Diedrich
+Casey Berg;F10, J1;Mackenzie Milder, Jessica Lambo, Kelsey Bratland, Noel Rosales
+Shayla Betts;E9, D12;Margaret Petellin, Cole Pollock, Maxwell Chin, Makaela Rasmussen
+Alyssa Blankenship;G13, E3;David Burgad, Anna Beaverson, Trenton Murray
+Kelsey Bratland;C7, J3;Rachel Lummis, Ella Marti, Casey Berg, Noel Rosales
+David Burgad;G15, C15;Alyssa Blankenship, Margaret Petellin, Gabby Schei
+Maxwell Chin;J7, D10;Braydon Saltou, Shayla Betts, Makaela Rasmussen
+Bjorn Christ;E15, F10;Elijah Mitchell, Julia Veit, Stella Kaster, Blake Skramstad
+Vicky Davis;C15, G9;Mathea Diedrich, Khalil Saldivar, Cole Pollock, Daniel Pfeffer-Kleemann
+Jocelyn Demiglio;B2, C7;Oskar Grothe, Noel Rosales, Jessica Droessler, Ella Marti
+Mathea Diedrich;C13, F2;Vicky Davis, Khalil Saldivar, Getruda Amos, Kaitlyn Bebensee
+Jessica Droessler;H6, B8;Stella Kaster, Tucker Young, Jocelyn Demiglio, Ella Marti
+Nour El Kassem;D6, C5;Abbey Falconer, Eric Shaffer, Ana Garcia, Chloe Rozga
+Abbey Falconer;E5, F4;Nour El Kassem, Eric Shaffer, Logan Fritz, Angelina Zimmerman
+Logan Fritz;E3, F6;Ana Garcia, Meg Sessions, Abbey Falconer, Angelina Zimmerman
+Britt Fulton;G7, D4;Allegra Garcia, Trenton Murray, Hunter Goodwin, Kayode Kuti
+Allegra Garcia;F8, J5;Britt Fulton, Trenton Murray, Ellie Gardner, Oskar Grothe
+Ana Garcia;E1, B4;Logan Fritz, Meg Sessions, Nour El Kassem, Chloe Rozga
+Ellie Gardner;B6, H4;Daniel Pfeffer-Kleemann, Makaela Rasmussen, Deepa Gayadin, Oskar Grothe
+Deepa Gayadin;B12, B10;Blake Skramstad, Angelina Zimmerman, Mackenzie Milder, Tucker Young
+Hunter Goodwin;E11, D6;Layken McGuire, Gabby Schei, Britt Fulton, Kayode Kuti
+Oskar Grothe;C3, H6;Jocelyn Demiglio, Noel Rosales, Deepa Gayadin, Ellie Gardner
+Hannah Hoffmann;F4, G15;Anna Beaverson, Kayode Kuti, Meg Sessions, Ella Marti
+Ben Jahnke;J1, C3;Gertruda Amos, Kaitlyn Bebensee, Elijah Mitchell, Harrison Prentice
+Stella Kaster;H4, G11;Jessica Droessler, Tucker Young, Bjorn Christ, Blake Skramstad
+Kayode Kuti;G5, E5;Anna Beaverson, Hannah Hoffmann, Britt Fulton, Hunter Goodwin
+Jessica Lambo;F12, C9;Casey Berg, Mackenzie Milder, Jocelyn Demiglio, Jessica Droessler
+Rachel Lummis;B8, D14;Kelsey Bratland, Ella Marti, Layken McGuire, Eric Shaffer
+Ella Marti;C9, F14;Kelsey Bratland, Rachel Lummis, Hannah Hoffmann, Meg Sessions
+Layken McGuire;D12, E13;Hunter Goodwin, Gabby Schei, Rachel Lummis, Eric Shaffer
+Mackenzie Milder;G11, B12;Casey Berg, Jessica Lambo, Deepa Gayadin, Tucker Young
+Elijah Mitchell;D14, C1;Bjorn Christ, Julia Veit, Ben Jahnke, Harrison Prentice
+Trenton Murray;G9, E1;Britt Fulton, Allegra Garcia, Anna Beaverson, Alyssa Blankenship
+Margaret Petellin;E7, C13;Shayla Betts, Cole Pollock, David Burgad, Gabby Schei
+Daniel Pfeffer-Kleemann;B4, G7;Ellie Gardner, Makaela Rasmussen, Vicky Davis, Cole Pollock
+Cole Pollock;D8, F8;Shayla Betts, Margaret Petellin, Vicky Davis, Daniel Pfeffer-Kleemann
+Harrison Prentice;G3, B2;Chloe Rozga, Ben Jahnke, Elijah Mitchell
+Makaela Rasmussen;C5, E11;Ellie Gardner, Daniel Pfeffer-Kleemann, Shayla Betts, Maxwell Chin
+Noel Rosales;C1, H2;Jocelyn Demiglio, Oskar Grothe, Casey Berg, Kelsey Bratland
+Chloe Rozga;G1, B6;Harrison Prentice, Nour El Kassem, Ana Garcia
+Khalil Saldivar;B14, E7;Vicky Davis, Mathea Diedrich, Braydon Saltou, Julia Veit
+Braydon Saltou;J9, E9;Maxwell Chin, Khalil Saldivar, Julia Veit
+Gabby Schei;D10, B14;Hunter Goodwin, Layken McGuire, David Burgad, Margaret Petellin
+Meg Sessions;D2, G13;Logan Fritz, Ana Garcia, Hannah Hoffmann, Ella Marti
+Eric Shaffer;D4, E15;Nour El Kassem, Abbey Falconer, Rachel Lummis, Layken McGuire
+Blake Skramstad;C11, F12;Deepa Gayadin, Angelina Zimmerman, Bjorn Christ, Stella Kaster
+Julia Veit;E13, D8;Bjorn Christ, Elijah Mitchell, Khalil Saldivar, Braydon Saltou
+Tucker Young;J5, C11;Jessica Droessler, Stella Kaster, Deepa Gayadin, Mackenzie Milder
+Angelina Zimmerman;B10, G5;Deepa Gayadin, Blake Skramstad, Abbey Falconer, Logan Fritz

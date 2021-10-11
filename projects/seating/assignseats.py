@@ -76,7 +76,7 @@ def checkseats(new_seats, new_groups, nseatsdict, teamdict, seatsdict):
         #print("sl: ", seatsdict[s])
         if len(seatsdict[s])> 0:
             sl = len(seatsdict[s])
-            lseat = seatsdict[s]
+            lseat = seatsdict[s]  # Won't work if multiple seats.  
             lrow = lseat[0]
             #print("n, l: ", nrow, lrow)
             if nrow == lrow:
